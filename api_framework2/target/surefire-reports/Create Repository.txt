@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Create Repository
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.11 s <<< FAILURE! - in Create Repository
+Create Repository.Create a public repository #1  Time elapsed: 7.495 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <201>
+     but: was <422>
+
+Create Repository.Create a public repository #2  Time elapsed: 0.612 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <201>
+     but: was <422>
+

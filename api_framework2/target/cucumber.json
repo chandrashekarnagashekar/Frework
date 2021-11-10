@@ -1,0 +1,851 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-10T01:45:22.647Z",
+        "line": 15,
+        "name": "Create a public repository",
+        "description": "",
+        "id": "create-repository;create-a-public-repository;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2526000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Header \"Authorization\" has value \"Bearer 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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Bearer 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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2676000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "JSON Payload is as below",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.json_payload(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "description",
+                  "private"
+                ]
+              },
+              {
+                "cells": [
+                  "Framework_Repo1",
+                  "This repo is from framework1",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5818000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"POST\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c422\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat stepdefinitions.StepDefinition.verify_status_code_is(StepDefinition.java:86)\r\n\tat ✽.Verify status code is 201(file:///D:/trainings/API%20Testing/API_Batch_12/Framework/api_framework2/src/test/resources/features/GithubCreateRepository.feature:10)\r\n",
+              "duration": 196000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Verify status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Validate Response body",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.validate_resp_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-10T01:45:34.510Z",
+        "line": 16,
+        "name": "Create a public repository",
+        "description": "",
+        "id": "create-repository;create-a-public-repository;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Header \"Authorization\" has value \"Bearer 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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Bearer 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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "JSON Payload is as below",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.json_payload(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "description",
+                  "private"
+                ]
+              },
+              {
+                "cells": [
+                  "Framework_Repo2",
+                  "This repo is from framework2",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"POST\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c422\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat stepdefinitions.StepDefinition.verify_status_code_is(StepDefinition.java:86)\r\n\tat ✽.Verify status code is 201(file:///D:/trainings/API%20Testing/API_Batch_12/Framework/api_framework2/src/test/resources/features/GithubCreateRepository.feature:10)\r\n",
+              "duration": 5000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Verify status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Validate Response body",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.validate_resp_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create Repository",
+    "description": "  Feature to create repo",
+    "id": "create-repository",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GithubCreateRepository.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-10T01:45:35.170Z",
+        "line": 17,
+        "name": "List repositories of organization",
+        "description": "\t\tThis scenario will list all the repositories of an organization with GET request",
+        "id": "list-the-organization-repositories;list-repositories-of-organization;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Header \"Authorization\" has value \"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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Query parameter \"type\" has value \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"private\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Query parameter \"per_page\" has value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Query parameter \"page\" has value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 473000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"GET\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path size() doesn\u0027t match.\nExpected: \u003c5\u003e\n  Actual: \u003c0\u003e\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)\r\n\tat io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat stepdefinitions.StepDefinition.verify_repo_count_is(StepDefinition.java:91)\r\n\tat ✽.Verify count is 5(file:///D:/trainings/API%20Testing/API_Batch_12/Framework/api_framework2/src/test/resources/features/GithubListOrganizationRepositories.feature:13)\r\n",
+              "duration": 2570000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Verify count is 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_repo_count_is(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-10T01:45:38.259Z",
+        "line": 18,
+        "name": "List repositories of organization",
+        "description": "\t\tThis scenario will list all the repositories of an organization with GET request",
+        "id": "list-the-organization-repositories;list-repositories-of-organization;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Header \"Authorization\" has value \"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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Query parameter \"type\" has value \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"public\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Query parameter \"per_page\" has value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Query parameter \"page\" has value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 517000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"GET\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 727000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify count is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_repo_count_is(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-10T01:45:39.571Z",
+        "line": 19,
+        "name": "List repositories of organization",
+        "description": "\t\tThis scenario will list all the repositories of an organization with GET request",
+        "id": "list-the-organization-repositories;list-repositories-of-organization;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Header \"Authorization\" has value \"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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Query parameter \"type\" has value \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"private\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Query parameter \"per_page\" has value \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Query parameter \"page\" has value \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 477000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"GET\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify count is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_repo_count_is(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-10T01:45:40.093Z",
+        "line": 20,
+        "name": "List repositories of organization",
+        "description": "\t\tThis scenario will list all the repositories of an organization with GET request",
+        "id": "list-the-organization-repositories;list-repositories-of-organization;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Header \"Authorization\" has value \"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\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authorization\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"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\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.header_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Query parameter \"type\" has value \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"public\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Query parameter \"per_page\" has value \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Query parameter \"page\" has value \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.query_parameter_has_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 536000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"GET\" request is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.request_is_executed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify count is 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.verify_repo_count_is(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "List the organization repositories",
+    "description": "\tDescription of the feature.",
+    "id": "list-the-organization-repositories",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GithubListOrganizationRepositories.feature",
+    "tags": []
+  }
+]
