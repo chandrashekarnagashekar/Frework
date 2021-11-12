@@ -1,6 +1,7 @@
 Feature: Create Repository
   Feature to create repo
 
+	#Scenario to create repository
   Scenario Outline: Create a public repository
     Given Header "Authorization" has value "Bearer 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"
     And JSON Payload is as below
